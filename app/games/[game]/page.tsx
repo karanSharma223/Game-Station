@@ -95,7 +95,7 @@ const page = async({params}: Props) => {
                       
                         {similarGames.map((item) => (
                           <div>
-                            <Product _id = {item._id} name = {item.name} buy_price={item.buy_price} slug = {item.slug} image={item.image}/>
+                            <Product key = {item._id} _id = {item._id} name = {item.name} buy_price={item.buy_price} slug = {item.slug} image={item.image}/>
                           </div>
                         ))}
                       
